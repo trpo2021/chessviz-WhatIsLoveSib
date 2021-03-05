@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main()
 {
@@ -7,14 +8,14 @@ int main()
 	int i, j;
 	
 	chessBoard[8][0] = ' ';
-	chessBoard[0][1] = 'R';
-	chessBoard[0][2] = 'N';
-	chessBoard[0][3] = 'B';
-	chessBoard[0][4] = 'Q';
-	chessBoard[0][5] = 'K';
-	chessBoard[0][6] = 'B';
-	chessBoard[0][7] = 'N';
-	chessBoard[0][8] = 'R';
+	chessBoard[0][1] = 'r';
+	chessBoard[0][2] = 'n';
+	chessBoard[0][3] = 'b';
+	chessBoard[0][4] = 'q';
+	chessBoard[0][5] = 'k';
+	chessBoard[0][6] = 'b';
+	chessBoard[0][7] = 'n';
+	chessBoard[0][8] = 'r';
 	
 	for (i = 1; i < 9; i++) {
 		chessBoard[1][i] = 'P';
@@ -40,7 +41,7 @@ int main()
 	
 	
 	for (i = 1; i < 9; ++i) {
-		chessBoard[7][i] = chessBoard[0][i];
+		chessBoard[7][i] = toupper(chessBoard[0][i]);
 		//printf("%c\n", chessBoard[7][i]);
 	}
 	
