@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <libchessviz/print_board.h>
+#include <libchessviz/move_figures.h>
 
 int main()
 {
@@ -18,7 +20,7 @@ int main()
 	chessBoard[0][8] = 'r';
 	
 	for (i = 1; i < 9; i++) {
-		chessBoard[1][i] = 'P';
+		chessBoard[1][i] = 'p';
 	}
 	
 	for (i = 1; i < 9; i++) {
@@ -35,7 +37,7 @@ int main()
 	
 	for (i = 2; i < 6; i++) {
 		for (j = 1; j < 9; j++) {
-			chessBoard[i][j] = '*';
+			chessBoard[i][j] = ' ';
 		}
 	}
 	
@@ -45,14 +47,9 @@ int main()
 		//printf("%c\n", chessBoard[7][i]);
 	}
 	
+	print_board(chessBoard);
+	move_figures(chessBoard);
 	
-	
-	for (i = 0; i < 9; i++) {
-		for (j = 0; j < 9; j++) {
-			printf("%2c", chessBoard[i][j]);
-		}
-		printf("\n");
-	}
 }
 	
 	
