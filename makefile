@@ -12,4 +12,4 @@ obj/staticlib.a: obj/print_board.o obj/move_figures.o
 	ar rcs obj/staticlib.a obj/print_board.o obj/move_figures.o
 .PHONY : clean
 clean :
-	rm -rf obj/*.o bin/chessgame
+	rm -rf obj/*.o obj/*.a bin/chessgame
