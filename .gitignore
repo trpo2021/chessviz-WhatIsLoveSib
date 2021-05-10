@@ -1,3 +1,4 @@
 bin/chessgame
 obj/*.o
 obj/*.a
+.vscode
