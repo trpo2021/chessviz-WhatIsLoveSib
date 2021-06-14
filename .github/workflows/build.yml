@@ -12,5 +12,5 @@ jobs:
       - name: Chessgame
         run: make 
 
-      #- name: Check codestyle
-      #  run: git ls-files *.{c,h} | xargs clang-format -i --verbose && git diff --exit-code
+      - name: Check codestyle
+        run: git ls-files *.{c,h} | xargs clang-format -i --verbose && git diff --exit-code
