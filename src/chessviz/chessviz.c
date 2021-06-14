@@ -3,7 +3,7 @@
 #include <libchessviz/print_board.h>
 #include <stdio.h>
 
-int main() 
+int main()
 {
     char chessBoard[9][9];
 

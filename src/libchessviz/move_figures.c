@@ -1,7 +1,7 @@
 #include "move_figures.h"
 #include <stdio.h>
 
-void move_figures(char chessBoard[9][9]) 
+void move_figures(char chessBoard[9][9])
 {
     char move[6];
     scanf("%s", move);
